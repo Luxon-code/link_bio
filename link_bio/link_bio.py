@@ -16,7 +16,7 @@ def index() -> rx.Component:
                 links(),
                 max_width=styles.MAX_WIDTH,
                 width="100%",
-                margin_y=styles.Espacer.LARGE.value
+                margin_y=styles.Size.LARGE.value
             )
         ),
         footer(),
