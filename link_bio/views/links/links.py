@@ -1,6 +1,7 @@
 import reflex as rx
 from link_bio.components.link_button import link_button
 from link_bio.components.title import title
+from link_bio.styles import styles
 def links() -> rx.component:
     return rx.vstack(
         rx.center(
@@ -27,4 +28,5 @@ def links() -> rx.component:
             "https://www.youtube.com"
         ),
         width="100%",
+        spacing=styles.Size.MEDIUM.value,
     )
