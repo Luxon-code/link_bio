@@ -16,14 +16,22 @@ def index() -> rx.Component:
                 links(),
                 max_width=styles.MAX_WIDTH,
                 width="100%",
-                margin_y=styles.Size.LARGE.value
+                margin_y=styles.Size.BIG.value,
+                padding=styles.Size.BIG.value
             )
         ),
         footer(),
     )
 
 app = rx.App(
-    style=styles.BASE_STYLE
+    style=styles.BASE_STYLE,
+    stylesheets=[
+        "https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Poppins:wght@300;700&display=swap",
+    ],
 )
-app.add_page(index)
+app.add_page(
+    index,
+    title="Luxon-code | Aprendiendo Programacion",
+    image="favicon.png"
+)
 app.compile()
