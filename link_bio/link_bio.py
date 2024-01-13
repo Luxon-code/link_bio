@@ -32,6 +32,6 @@ app = rx.App(
 app.add_page(
     index,
     title="Luxon-code | Aprendiendo Programacion",
-    image="favicon.png"
+    description="pagina de links",
+    image="favicon.ico"
 )
-app.compile()

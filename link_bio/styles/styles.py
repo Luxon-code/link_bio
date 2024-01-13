@@ -19,12 +19,13 @@ class Size(Enum):
 #styles base
 
 BASE_STYLE = {
-    "font_family":Font.DEFAULT.value,
     "background_color" : Color.BACKGROUND.value,
+    "font_family":Font.DEFAULT.value,
     rx.Button:{
         "width": "100%",
         "height": "100%",
-        "display":"block",
+        "white_space":"normal",
+        "text_align":"start",
         "padding":Size.SMALL.value,
         "border_radius":Size.DEFAULT.value,
         "color": TextColor.HEADER.value,
@@ -62,5 +63,5 @@ title_style = dict(
 
 navbar_title_style  = dict(
     font_family=Font.LOGO.value,
-    font_size = Size.LARGE.value
+    font_size = Size.LARGE.value,
 )
